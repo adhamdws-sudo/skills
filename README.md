@@ -147,6 +147,18 @@ skills. A skill's full instructions load when a task triggers it, adding 350–5
 one surface reference of up to 500 tokens. Estimates assume 4 characters per token. Each skill
 stays within the word budget in [`AGENTS.md`](AGENTS.md).
 
+## Data and network use
+
+The skills collect, store, and send no user data, and the plugin has no hooks or MCP servers. A few
+skills tell the agent to run commands on the user's machine:
+
+- `inspect-glb` runs its bundled `scripts/inspect.mjs` on local GLB files. For compressed files it
+  runs `npx --yes @gltf-transform/cli@4.4.2`, which downloads that pinned package from npm.
+- `inspect-runtime` injects its bundled `scripts/devtools-hook.js` into the app's own page.
+- `find-examples` reads official examples from the public `playcanvas/engine`,
+  `playcanvas/web-components`, and `playcanvas/developer-site` repositories with `gh api` when they
+  are not installed locally.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for pull-request expectations. For repeatable skill failures,
