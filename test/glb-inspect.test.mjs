@@ -7,6 +7,9 @@ import test from 'node:test';
 
 import { inspectGlb } from '../skills/inspect-glb/scripts/inspect.mjs';
 
+// repo-relative paths below resolve from the repository root
+process.chdir(resolve(import.meta.dirname, '..'));
+
 const glb = (json, bin = Buffer.alloc(0)) => {
     const j = Buffer.from(JSON.stringify(json));
     const jp = (j.length + 3) & ~3;

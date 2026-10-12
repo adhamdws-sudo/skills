@@ -3,6 +3,9 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { basename, dirname, resolve } from 'node:path';
 import test from 'node:test';
 
+// repo-relative paths below resolve from the repository root
+process.chdir(resolve(import.meta.dirname, '..'));
+
 const semver = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-(?:0|[1-9]\d*|\d*[A-Za-z-][0-9A-Za-z-]*)(?:\.(?:0|[1-9]\d*|\d*[A-Za-z-][0-9A-Za-z-]*))*)?(?:\+[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?$/;
 const codexFields = new Set([
     'id', 'name', 'version', 'description', 'skills', 'apps', 'mcpServers', 'interface',
