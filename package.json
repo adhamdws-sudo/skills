@@ -1,6 +1,6 @@
 {
     "name": "@playcanvas/skills",
-    "version": "0.6.1",
+    "version": "0.6.2",
     "private": true,
     "description": "Portable skills for building applications with PlayCanvas Engine",
     "keywords": [
