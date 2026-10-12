@@ -22,9 +22,6 @@
     "license": "MIT",
     "author": "PlayCanvas <support@playcanvas.com>",
     "type": "module",
-    "scripts": {
-        "version": "node scripts/sync-plugin-version.mjs && git add .claude-plugin/plugin.json .codex-plugin/plugin.json .cursor-plugin/plugin.json .claude-plugin/marketplace.json .cursor-plugin/marketplace.json"
-    },
     "engines": {
         "node": "24.x"
     },
