@@ -48,3 +48,6 @@ jobs:
           for skill in skills/*; do
             agentskills validate "$skill"
           done
+
+      - name: Validate Claude plugin
+        run: npx -y @anthropic-ai/claude-code@2.1.296 plugin validate . --strict
