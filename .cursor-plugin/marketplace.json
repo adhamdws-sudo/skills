@@ -10,7 +10,7 @@
     },
     "plugins": [
         {
-            "name": "engine",
+            "name": "playcanvas",
             "source": "./",
             "description": "Skills for building applications with PlayCanvas Engine"
         }

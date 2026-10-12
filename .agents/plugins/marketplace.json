@@ -5,7 +5,7 @@
     },
     "plugins": [
         {
-            "name": "engine",
+            "name": "playcanvas",
             "source": {
                 "source": "local",
                 "path": "./"

@@ -37,7 +37,7 @@ the same agent exposes duplicate skills.
 
 ```bash
 claude plugin marketplace add playcanvas/skills
-claude plugin install engine@playcanvas
+claude plugin install playcanvas@playcanvas
 ```
 
 In the desktop app's Code tab, installed plugins are available under **+ → Plugins**.
@@ -49,7 +49,7 @@ In the desktop app's Code tab, installed plugins are available under **+ → Plu
 
 ```bash
 codex plugin marketplace add playcanvas/skills
-codex plugin add engine@playcanvas
+codex plugin add playcanvas@playcanvas
 ```
 
 The Codex app uses the same marketplace and plugin installation.
@@ -66,7 +66,7 @@ cursor-agent --plugin-dir .
 ```
 
 For a persistent installation, add this repository as a plugin marketplace in Cursor or link the
-repository root into `~/.cursor/plugins/local/engine`. Teams and Enterprise organizations can
+repository root into `~/.cursor/plugins/local/playcanvas`. Teams and Enterprise organizations can
 publish the same marketplace to their organization.
 
 </details>
