@@ -21,7 +21,7 @@ agreed before implementation.
 Install dependencies and run the repository suite:
 
 ```sh
-npm ci
+npm ci --prefix test
 npm test
 ```
 
@@ -36,6 +36,15 @@ for skill in skills/*; do
 done
 ```
 
+Test dependencies live in `test/package.json` so the plugin root ships no lockfile and plugin
+installs fetch no packages.
+
 Pull requests should explain the user-visible failure or workflow being improved, identify the
 package versions checked, and include numbered manual smoke-test steps with expected results when
 runtime behavior changes.
+
+## Releases
+
+Run the **Publish** workflow from `main` in GitHub Actions and choose `patch`, `minor`, or `major`.
+It bumps `package.json` and every plugin manifest, pushes the release commit and tag, and creates
+the GitHub release.
