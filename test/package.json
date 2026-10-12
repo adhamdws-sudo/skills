@@ -1,6 +1,10 @@
 {
     "name": "@playcanvas/skills-test",
     "private": true,
+    "scripts": {
+        "test": "(cd .. && node --test test/*.test.mjs) && npm run test:types",
+        "test:types": "tsc -p smoke/tsconfig.json"
+    },
     "devDependencies": {
         "@playcanvas/react": "0.11.7",
         "@playcanvas/web-components": "0.26.0",

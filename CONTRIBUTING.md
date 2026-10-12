@@ -21,7 +21,8 @@ agreed before implementation.
 Install dependencies and run the repository suite:
 
 ```sh
-npm ci --prefix test
+cd test
+npm ci
 npm test
 ```
 

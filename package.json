@@ -23,8 +23,6 @@
     "author": "PlayCanvas <support@playcanvas.com>",
     "type": "module",
     "scripts": {
-        "test": "node --test test/*.test.mjs && npm run test:types",
-        "test:types": "test/node_modules/.bin/tsc -p test/smoke/tsconfig.json",
         "version": "node scripts/sync-plugin-version.mjs && git add .claude-plugin/plugin.json .codex-plugin/plugin.json .cursor-plugin/plugin.json .claude-plugin/marketplace.json .cursor-plugin/marketplace.json"
     },
     "engines": {
