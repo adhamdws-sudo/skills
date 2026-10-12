@@ -2,7 +2,7 @@
     "name": "@playcanvas/skills-test",
     "private": true,
     "scripts": {
-        "test": "(cd .. && node --test test/*.test.mjs) && npm run test:types",
+        "test": "node --test *.test.mjs && npm run test:types",
         "test:types": "tsc -p smoke/tsconfig.json"
     },
     "devDependencies": {
