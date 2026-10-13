@@ -13,8 +13,8 @@ const codexFields = new Set([
 ]);
 const interfaceFields = new Set([
     'displayName', 'shortDescription', 'longDescription', 'developerName', 'category',
-    'capabilities', 'websiteURL', 'privacyPolicyURL', 'termsOfServiceURL', 'brandColor',
-    'logo', 'icons', 'screenshots', 'defaultPrompt', 'default_prompt'
+    'capabilities', 'websiteURL', 'supportURL', 'privacyPolicyURL', 'termsOfServiceURL', 'brandColor',
+    'logo', 'composerIcon', 'icons', 'screenshots', 'defaultPrompt', 'default_prompt'
 ]);
 const hosts = [
     {
