@@ -12,6 +12,7 @@
     "documentationUrl": "https://github.com/playcanvas/skills#readme",
     "supportUrl": "https://github.com/playcanvas/skills/issues/new?template=skill-feedback.yml",
     "privacyPolicyUrl": "https://playcanvas.com/privacy",
+    "termsOfServiceUrl": "https://playcanvas.com/terms",
     "license": "MIT",
     "keywords": ["playcanvas", "3d", "webgl", "webgpu", "game-engine"],
     "skills": [
